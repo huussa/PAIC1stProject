@@ -1,15 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3x4bycqmhr34"]
+[gd_scene load_steps=7 format=3 uid="uid://c3x4bycqmhr34"]
 
-[ext_resource type="PackedScene" uid="uid://cynm2cv6idelu" path="res://Players/maskdude.tscn" id="1_oj8hd"]
+[ext_resource type="PackedScene" uid="uid://btuu5hrgbot4x" path="res://Players/mask_dude.tscn" id="1_oj8hd"]
 [ext_resource type="Texture2D" uid="uid://c2t25a3ai13mx" path="res://assets/Background/Brown.png" id="2_gnif3"]
+[ext_resource type="PackedScene" uid="uid://dxyhv4icewi0c" path="res://Players/pink_man.tscn" id="3_lwy2l"]
+[ext_resource type="PackedScene" uid="uid://c20rq1th4b4y5" path="res://Players/ninja_frog.tscn" id="4_7pswh"]
+[ext_resource type="PackedScene" uid="uid://bbg4e6pctej45" path="res://Players/virtual_guy.tscn" id="5_34bfm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gnif3"]
 size = Vector2(1145, 121)
 
 [node name="main" type="Node2D"]
-
-[node name="MaskDude" parent="." instance=ExtResource("1_oj8hd")]
-position = Vector2(393, 179)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -26,3 +26,15 @@ texture = ExtResource("2_gnif3")
 position = Vector2(574, 314.00003)
 scale = Vector2(2.546875, 5.9375)
 texture = ExtResource("2_gnif3")
+
+[node name="MaskDude" parent="." instance=ExtResource("1_oj8hd")]
+position = Vector2(367, 352)
+
+[node name="PinkMan" parent="." instance=ExtResource("3_lwy2l")]
+position = Vector2(321, 289)
+
+[node name="NinjaFrog" parent="." instance=ExtResource("4_7pswh")]
+position = Vector2(436, 332)
+
+[node name="VirtualGuy" parent="." instance=ExtResource("5_34bfm")]
+position = Vector2(290, 342)

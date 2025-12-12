@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cynm2cv6idelu"]
+
+[ext_resource type="Script" uid="uid://csxrxhee5r37d" path="res://Players/player.gd" id="1_ky5qa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_anspg"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ky5qa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 4)
+shape = SubResource("CircleShape2D_anspg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
